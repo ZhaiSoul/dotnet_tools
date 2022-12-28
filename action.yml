@@ -6,9 +6,9 @@ runs:
   using: "composite"
   steps:
     - name: Reactor
-      run: Reactor\dotNET_Reactor.Console.exe $REACTOR_ARG
+      run: %GITHUB_ACTION_PATH%\Reactor\dotNET_Reactor.Console.exe $REACTOR_ARG
       shell: cmd
      
     - name: CodeSign
-      run: CodeSign\CodeSignTool.bat $CODESIGN_ARG
+      run: %GITHUB_ACTION_PATH%\CodeSign\CodeSignTool.bat $CODESIGN_ARG
       shell: cmd
