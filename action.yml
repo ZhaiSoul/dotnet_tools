@@ -7,12 +7,15 @@ runs:
   steps:
     - name: Reactor
       run: |
-        cd Reactor
+        ls
+        cd ../Reactor
+        ls
         dotNET_Reactor.Console.exe $REACTOR_ARG
       shell: cmd
      
     - name: CodeSign
       run: |
+        ls
         cd CodeSign
         CodeSignTool.bat $CODESIGN_ARG
       shell: cmd
