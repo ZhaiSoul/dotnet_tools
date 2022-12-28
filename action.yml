@@ -16,5 +16,5 @@ runs:
       run: |
         cd %GITHUB_ACTION_PATH%
         cd CodeSign
-        CodeSignTool.bat $CODESIGN_ARG
+        CodeSignTool $CODESIGN_ARG
       shell: cmd
