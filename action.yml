@@ -7,20 +7,18 @@ runs:
   steps:
     - name: Reactor
       run: |
-        cd ${GITHUB_ACTION_PATH}
-        ls
-        cd $GITHUB_ACTION_PATH
-        ls
         cd %GITHUB_ACTION_PATH%
         ls
-        cd ../Reactor
+        cd Reactor
         ls
         dotNET_Reactor.Console.exe $REACTOR_ARG
       shell: cmd
      
     - name: CodeSign
       run: |
+        cd %GITHUB_ACTION_PATH%
         ls
         cd CodeSign
+        ls
         CodeSignTool.bat $CODESIGN_ARG
       shell: cmd
