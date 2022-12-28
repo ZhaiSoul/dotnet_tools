@@ -7,6 +7,11 @@ runs:
   steps:
     - name: Reactor
       run: |
+        cd ${GITHUB_ACTION_PATH}
+        ls
+        cd $GITHUB_ACTION_PATH
+        ls
+        cd %GITHUB_ACTION_PATH%
         ls
         cd ../Reactor
         ls
