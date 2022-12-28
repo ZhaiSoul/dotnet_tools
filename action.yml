@@ -11,7 +11,7 @@ runs:
         ls
         cd Reactor
         ls
-        dotNET_Reactor.Console.exe $REACTOR_ARG
+        dotNET_Reactor.Console.exe %REACTOR_ARG%
       shell: cmd
      
     - name: CodeSign
@@ -20,5 +20,5 @@ runs:
         ls
         cd CodeSign
         ls
-        CodeSignTool.bat $CODESIGN_ARG
+        CodeSignTool.bat %CODESIGN_ARG%
       shell: cmd
