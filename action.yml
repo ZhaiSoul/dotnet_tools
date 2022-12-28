@@ -5,10 +5,10 @@ author: 'ZhaiSoul'
 runs:
   using: "composite"
   steps:
-    - id: Reactor
-      run: Reactor/dotNET_Reactor.Console.exe $REACTOR_ARG
+    - name: Reactor
+      run: Reactor\dotNET_Reactor.Console.exe $REACTOR_ARG
       shell: cmd
      
-    - id: CodeSign
-      run: CodeSign/CodeSignTool.bat $CODESIGN_ARG
+    - name: CodeSign
+      run: CodeSign\CodeSignTool.bat $CODESIGN_ARG
       shell: cmd
