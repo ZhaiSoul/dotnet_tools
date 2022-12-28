@@ -9,12 +9,12 @@ runs:
       run: |
         cd %GITHUB_ACTION_PATH%
         cd Reactor
-        dotNET_Reactor.Console.exe $REACTOR_ARG
+        dotNET_Reactor.Console.exe %REACTOR_ARG%
       shell: cmd
      
     - name: CodeSign
       run: |
         cd %GITHUB_ACTION_PATH%
         cd CodeSign
-        CodeSignTool $CODESIGN_ARG
+        CodeSignTool %CODESIGN_ARG%
       shell: cmd
