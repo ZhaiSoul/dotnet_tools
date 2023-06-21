@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
   <Metadata>
-    <Identity Id="27888a6a-25c8-4075-80a5-ee31eefa6d9c" Version="1.4" Language="en-US" Publisher="Eziriz" />
+    <Identity Id="27888a6a-25c8-4075-80a5-ee31eefa6d9c" Version="1.7" Language="en-US" Publisher="Eziriz" />
     <DisplayName>.NET Reactor Visual Studio Automation Add-in</DisplayName>
     <Description xml:space="preserve">.NET Reactor Visual Studio Automation Package</Description>
     <Icon>.NET Reactor Visual Studio Automation Package</Icon>
